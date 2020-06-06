@@ -24,7 +24,7 @@ tags:
         
 paths:
   #Modulo de Authors 
-  /author:
+  /authors/:
     get:
       tags:
         - Authors     
@@ -129,7 +129,7 @@ paths:
           $ref: components/responses/responses.yml#/Unauthenticated 
 
   #Modulo de Stands 
-  /Stand:
+  /stands:
     get:
       tags:
         - Stand     
@@ -218,7 +218,7 @@ paths:
           $ref: components/responses/responses.yml#/Unauthenticated 
  
   #Modulo de Editorial
-  /editorial:
+  /editorials:
     get:
       tags:
         - Editorial      
@@ -254,7 +254,7 @@ paths:
         '401':
           $ref: components/responses/responses.yml#/Unauthenticated
   
-  /editorial/{id}:
+  /editorials/{id}:
     get:
       tags:
         - Editorial
