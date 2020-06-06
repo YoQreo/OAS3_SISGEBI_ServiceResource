@@ -1,0 +1,78 @@
+ # SCHEMA MODEL
+  # Este tipo de esquema representa a la entidad del modelo en nuestra aplicación
+  # Por ejemplo en el servicio: ServiceBooks, tenemos 2 modelos el cual se relacionan
+    # stand: Es el esquema del modelo stand, el cual contiene sus atributos y un ejemplo  
+    author:
+      type: object
+      properties:
+        id:
+          type: integer          
+        name:
+          type: string          
+        category: 
+          type: string  
+        created_at: 
+          type: string    
+        updated_at:
+            type: string
+            
+     #Category:Tesis, Informe, Revista, Libro       
+      example:
+        id: 1
+        name: Luis Joyanes 
+        category: Tesis  
+        created_at: "2020-04-13 06:10:41"
+        updated_at: "2020-04-14 06:10:41" 
+
+    stand:
+      type: object
+      properties:
+        id:
+          type: integer          
+        title:
+          type: string          
+        level: 
+          type: integer  
+        type:
+          type: string 
+        status:
+          type: string   
+        created_at: 
+          type: string    
+        updated_at:
+            type: string
+
+    #level no puede ser nullo        
+    #type:Tesis, Revista, Libro   
+    #status:Habilitado, deshabilitado
+      example:
+        id: 1
+        title: Stand 3
+        level: 3
+        type: Revista
+        status: Habilitado
+        created_at: "2020-04-13 06:10:41"
+        updated_at: "2020-04-17 06:10:41" 
+
+
+    Editorial:
+      type: object
+      properties:
+        id:
+          type: integer
+        name:
+          type: string
+        category:
+          type: string
+        created_at: 
+          type: string    
+        updated_at:
+            type: string
+
+      #Category:Tesis, Informe, Revista, Libro      
+      example:
+        id: 582
+        name: Prueba
+        category: Tesis
+        created_at: "2020-04-13 06:10:41"
+        updated_at: "2020-04-13 06:10:41"       

@@ -1,0 +1,337 @@
+openapi: '3.0.2'
+info:
+  title: Resource Service 
+  description: This service allows for control of the system's resource
+  version: '1.0.0'
+  contact:
+    #x-name: [{Stefany C. Juan de Dios Arango}, {Carlos Challanca Ccorupuna}]
+    x-name: 
+      - Stefany C. Juan de Dios Arango
+      - Carlos Challanca Ccorupuna
+    #x-email: [{stefanyj1609@gmail.com, carlos_7174@hotmail.com}]
+    x-email: 
+      - stefanyj1609@gmail.com
+      - carlos_7174@hotmail.com
+    
+servers:
+  #- description: Authors API local
+  - url: https://resource-service-sisgebi.herokuapp.com/
+
+
+tags:
+  - name: Resource Service 
+    description: All about resource management
+        
+paths:
+  #Modulo de Authors 
+  /author:
+    get:
+      tags:
+        - Authors     
+      summary: Represents the authors list
+            
+      operationId: getListarAuthor
+      responses:      
+        '200':
+          description: ok,successful operation
+          $ref: components/responses/responses.yml#/ShowAuthors          
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          description: Unauthorized
+          $ref: components/responses/responses.yml#/Unauthenticated 
+          
+          
+    post:
+      tags:
+        - Authors    
+      summary: Add a new author to the system
+      operationId: addAuthor
+      requestBody:
+        description: Author to add to the system
+        content:
+          application/json:
+            schema:
+              $ref: components/schemas/payloads/payload.yml#/AuthorPayload
+      responses:      
+        '201':
+          $ref: components/responses/responses.yml#/CreatedAuthor          
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          description: Unauthorized
+          $ref: components/responses/responses.yml#/Unauthenticated 
+
+  /authors/{id}:
+    get:
+      tags:
+        - Authors
+      summary: Find a author
+      operationId: showAuthor
+      parameters:
+        - $ref: components/parameters/parameters.yml#/idAuthor
+      responses:
+        '200':
+          $ref: components/responses/responses.yml#/ShowAuthor     
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated 
+
+    put: 
+      tags:
+        - Authors
+      summary: Update author
+      operationId: updateAuthor
+      parameters: 
+        - $ref: components/parameters/parameters.yml#/idAuthor
+      requestBody:
+        description: author to update to the system
+        content:
+          x-www-form-urlencoded:
+            schema:
+              $ref: components/schemas/payloads/payload.yml#/AuthorPayload
+      responses:
+        '201':
+          $ref: components/responses/responses.yml#/CreatedAuthor     
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          description: Method not allowed
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated 
+        '422':
+          $ref: components/responses/responses.yml#/UnprocessableEntity           
+
+    delete:
+      tags:
+        - Authors
+      summary: Delete author
+      operationId: destroyAuthor
+      parameters:
+        - $ref: components/parameters/parameters.yml#/idAuthor
+      responses:
+        '200':
+          $ref: components/responses/responses.yml#/DeleteAuthor      
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          description: Method not allowed
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated 
+
+  #Modulo de Stands 
+  /Stand:
+    get:
+      tags:
+        - Stand     
+      summary: Represents the stand list
+            
+      operationId: getListarStand
+      responses:      
+        '200':
+          description: ok,successful operation
+          $ref: components/responses/responses.yml#/ShowStands          
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          description: Unauthorized
+          $ref: components/responses/responses.yml#/Unauthenticated 
+          
+          
+    post:
+      tags:
+        - Stand    
+      summary: Add a new stand to the system
+      operationId: addStand
+      requestBody:
+        description: stand to add to the system
+        content:
+          application/json:
+            schema:
+              $ref: components/schemas/payloads/payload.yml#/StandPayload
+      responses:      
+        '201':
+          $ref: components/responses/responses.yml#/CreatedStand          
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          description: Unauthorized
+          $ref: components/responses/responses.yml#/Unauthenticated 
+
+  /stands/{id}:
+    
+    put: 
+      tags:
+        - Stand
+      summary: Update stand
+      operationId: updateStand
+      parameters: 
+        - $ref: components/parameters/parameters.yml#/idStand
+      requestBody:
+        description: stand to update to the system
+        content:
+          x-www-form-urlencoded:
+            schema:
+              $ref: components/schemas/payloads/payload.yml#/StandPayload
+      responses:
+        '201':
+          $ref: components/responses/responses.yml#/CreatedStand      
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          description: Method not allowed
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated 
+        '422':
+          $ref: components/responses/responses.yml#/UnprocessableEntity           
+
+    delete:
+      tags:
+        - Stand
+      summary: Delete stand
+      operationId: destroyStand
+      parameters:
+        - $ref: components/parameters/parameters.yml#/idStand
+      responses:
+        '200':
+          $ref: components/responses/responses.yml#/DeleteStand      
+        '404':          
+          $ref: components/responses/responses.yml#/NotFound 
+        '405':
+          description: Method not allowed
+          $ref: components/responses/responses.yml#/MethodNotAllowed           
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated 
+ 
+  #Modulo de Editorial
+  /editorial:
+    get:
+      tags:
+        - Editorial      
+      summary: Find all editorials
+      operationId: getListarEditorial
+      responses:      
+        '200':
+          $ref: components/responses/responses.yml#/ShowEditorials
+        '404':
+          $ref: components/responses/responses.yml#/NotFound
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated
+    
+    post:
+      tags:
+        - Editorial    
+      summary: Add a new editorial to the system
+      operationId: addEditorial  
+      requestBody:
+        description: Editorial to add to the system
+        content:
+          application/json:
+            schema:
+              $ref: components/schemas/payloads/payload.yml#/EditorialPayload
+            
+      responses:      
+        '201':
+          $ref: components/responses/responses.yml#/CreatedEditorial
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated
+  
+  /editorial/{id}:
+    get:
+      tags:
+        - Editorial
+      summary: Find one editorial
+      operationId: showEditorial
+      parameters:
+        - $ref: components/parameters/parameters.yml#/idEditorial
+      responses:
+        '200':
+          $ref: components/responses/responses.yml#/ShowEditorial
+        '404':
+          $ref: components/responses/responses.yml#/NotFound
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated
+
+
+    put:
+      tags:
+        - Editorial
+      summary: Update one editorial to the system
+      operationId: editorialUpdate
+      parameters:
+        - $ref: components/parameters/parameters.yml#/idEditorial
+      requestBody:
+        description: Editorial updated
+        content: 
+          x-www-form-urlencoded:
+            schema: 
+              $ref: components/schemas/payloads/payload.yml#/EditorialPayload
+              
+      responses:
+        '200':
+          $ref: components/responses/responses.yml#/Ok
+        '404':
+          $ref: components/responses/responses.yml#/NotFound
+        '422':
+          $ref: components/responses/responses.yml#/UnprocessableEntity 
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed
+
+    delete:
+      tags:
+        - Editorial
+      summary: Delete any editorial to the system
+      operationId: editorialDelete
+      parameters:
+        - $ref: components/parameters/parameters.yml#/idEditorial
+      responses:
+        '200':
+          $ref: components/responses/responses.yml#/Ok
+        '404':
+          $ref: components/responses/responses.yml#/NotFound
+        '401':
+          $ref: components/responses/responses.yml#/Unauthenticated
+        '405':
+          $ref: components/responses/responses.yml#/MethodNotAllowed
+
+
+# Aplicar la API key globalmente a todas las operaciones 
+security:
+  - Authorization: []
+            
+
+components:
+      
+  # SECURITY
+  # Contiene todos los tipos de seguridad para el uso del servicio  
+  securitySchemes:
+    # AUTHORIZATION:
+    # Permite el uso del servicio mediante el registro de una api key enviado en el header
+    # con el nombre Authorization, por ejemplo: Authorization EJm9IExSA9rv3N9uCVfIhNRdNOMUSe8w
+    # estas cadenas serán colocadas en el archivo de configuración del servicio y restringido mediante un middleware
+    Authorization:
+      type: apiKey
+      name: Authorization
+      in: header 

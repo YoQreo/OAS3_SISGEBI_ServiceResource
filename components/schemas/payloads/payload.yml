@@ -1,0 +1,50 @@
+#PAYLOAD SCHEME
+  #Este esquema contiene la estructura de un request body
+  ##Category:Tesis, Informe, Revista, Libro 
+    AuthorPayload:
+      type: object
+      properties:        
+        name:
+          type: string                               
+        category: 
+          type: string      
+                         
+      example:           
+          name: Autor7
+          category: Tesis  
+         
+
+    #level no puede ser nullo        
+    #type:Tesis, Revista, Libro   
+    #status:Habilitado, deshabilitado     
+    StandPayload:
+      type: object
+      properties:        
+        title:
+          type: string                               
+        level: 
+          type: integer  
+        type:
+          type: string
+        status:
+          type: string  
+        
+                        
+      example:           
+          title: Stand 3
+          level: 3 
+          type: Revista  
+          status: Habilitado
+          
+    #Category:Tesis, Informe, Revista, Libro 
+    EditorialPayload:
+      type: object
+      properties:
+        name:
+          type: string
+        category:
+          type: string
+          
+      example:
+        name: PruebaA
+        category: Informe

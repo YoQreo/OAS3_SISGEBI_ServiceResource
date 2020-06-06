@@ -1,0 +1,165 @@
+#RESPONSE SCHEME
+  # Este esquema Contiene la estructura de una respuesta
+    # SUCCESSFUL RESPONSE -> Contiene la estructura de una respuesta de exito
+    SuccessfulResponse:
+      type: object
+      required:
+        - error
+        - code
+      properties:
+        data: 
+          type: object
+        code: 
+          type: integer
+
+  # Este esquema Contiene la estructura de una respuesta para autores
+    # CreatedResponse: Esquema de la respuesta de exito CreatedResponse el cual contiene un ejemplo
+    CreatedResponseAuthor:
+      type: object
+      required:
+        - data
+        - code
+      properties:
+        data:           
+          $ref: ../models/models.yml#/author
+        code: 
+          type: integer   
+          example: 201  
+          
+    ShowAuthorResponse:
+      type: object
+      required:
+        - data
+        - code
+      properties: 
+        data:
+          $ref: ../models/models.yml#/author
+        code:
+          type: integer
+          example: 200
+
+    ShowAuthorsResponse:
+      type: object
+      required:
+        - data
+        - code
+      properties: 
+        data:
+          $ref: ../models/models.yml#ArrayOfAuthors
+        code:
+          type: integer
+          example: 200
+
+  # Este esquema Contiene la estructura de una respuesta para stands
+    # CreatedResponse: Esquema de la respuesta de exito CreatedResponse el cual contiene un ejemplo
+    CreatedResponseStand:
+      type: object
+      required:
+        - data
+        - code
+      properties:
+        data:           
+          $ref: ../models/models.yml#/stand
+        code: 
+          type: integer   
+          example: 201  
+          
+    ShowStandResponse:
+      type: object
+      required:
+        - data
+        - code
+      properties: 
+        data:
+          $ref: ../models/models.yml#/stand
+        code:
+          type: integer
+          example: 200
+
+    ShowStandsResponse:
+      type: object
+      required:
+        - data
+        - code
+      properties: 
+        data:
+          $ref: ../models/models.yml#ArrayOfStands
+        code:
+          type: integer
+          example: 200
+
+
+    CreatedResponseEditorial:
+      type: object
+      required:
+        - data
+        - code
+      properties:
+        data:           
+          $ref: ../models/models.yml#/Editorial
+        code: 
+          type: integer   
+          example: 201  
+      
+    ShowEditorialResponse:
+      type: object
+      required: 
+        - data
+        - code
+      properties:
+        data:
+          $ref: ../models/models.yml#/Editorial
+        code:
+          type: integer
+          example: 200
+
+    ShowEditorialsResponse:
+      type: object
+      required: 
+        - data
+        - code
+      properties:
+        data:
+          $ref: ../models/models.yml#ArrayOfEditorials
+        code:
+          type: integer
+          example: 200  
+
+    UpdateResponse:
+      type: object  
+      required:
+        - data
+        - code
+      properties:
+        data:
+          type: string
+          example: "Request susccessful"
+        code: 
+          type: integer
+          example: 200
+      
+    NoContentResponse:
+      type: object
+      required:
+        - data
+        - code
+      properties:
+        data:
+          type: string
+          example: No content
+        code:
+          type: integer
+          example: 204
+
+    AcceptedResponse:
+      type: object
+      required:
+        - data
+        - code
+      properties:
+        data:
+          type: string
+          example: Accepted
+        code:
+          type: integer
+          example: 202

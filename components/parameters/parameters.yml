@@ -1,0 +1,27 @@
+
+  # PARAMETERS
+  #Contiene todos los parámetros que serán utilizados en una petición http ya sea que sea enviado
+  #por el header, path, query o cache  
+    idStand:
+      name: idStand
+      in: path
+      required: true
+      description: Stand id 
+      schema:
+        type: integer 
+
+    idAuthor:
+      name: idAuthor
+      in: path
+      required: true
+      description: Autor id 
+      schema:
+        type: integer      
+
+    idEditorial:
+      name: idEditorial
+      in: path
+      required: true
+      description: Editorial's Id
+      schema:
+        type: integer

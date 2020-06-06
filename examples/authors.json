@@ -1,0 +1,286 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Luis Joyanes",
+            "category": "Tesis",
+            "created_at": "2017-10-13 07:00:31 ",
+            "update_at": "2019-02-02 06:39:28 "
+        },
+        {
+          "id": 1,
+          "name": "Summer Galloway",
+          "category": "Libro",
+          "created_at": "2015-10-19 12:26:32 ",
+          "update_at": "2014-09-12 08:02:30 "
+        },
+        {
+          "id": 2,
+          "name": "Sharlene Martin",
+          "category": "Libro",
+          "created_at": "2019-09-03 04:20:33 ",
+          "update_at": "2014-09-02 04:50:31 "
+        },
+        {
+          "id": 3,
+          "name": "Miles Bradford",
+          "category": "Revista",
+          "created_at": "2016-01-16 08:17:41 ",
+          "update_at": "2015-08-08 03:04:09 "
+        },
+        {
+          "id": 4,
+          "name": "Kathleen Kent",
+          "category": "Libro",
+          "created_at": "2014-06-07 02:19:22 ",
+          "update_at": "2017-02-24 12:08:20 "
+        },
+        {
+          "id": 5,
+          "name": "Pace Williamson",
+          "category": "Tesis",
+          "created_at": "2014-05-06 10:28:08 ",
+          "update_at": "2014-05-15 05:45:39 "
+        },
+        {
+          "id": 6,
+          "name": "Jensen Hill",
+          "category": "Tesis",
+          "created_at": "2018-01-04 01:25:22 ",
+          "update_at": "2018-05-25 12:55:03 "
+        },
+        {
+          "id": 7,
+          "name": "Cross Simpson",
+          "category": "Libro",
+          "created_at": "2015-03-08 10:21:58 ",
+          "update_at": "2017-02-21 11:41:37 "
+        },
+        {
+          "id": 8,
+          "name": "Leanna Ross",
+          "category": "Revista",
+          "created_at": "2020-03-03 11:23:10 ",
+          "update_at": "2019-11-04 09:29:11 "
+        },
+        {
+          "id": 9,
+          "name": "Genevieve Alexander",
+          "category": "Libro",
+          "created_at": "2014-06-10 08:41:05 ",
+          "update_at": "2015-02-13 12:42:45 "
+        },
+        {
+          "id": 10,
+          "name": "Acevedo Dennis",
+          "category": "Libro",
+          "created_at": "2018-07-25 10:14:15 ",
+          "update_at": "2017-01-04 09:31:16 "
+        },
+        {
+          "id": 11,
+          "name": "Lilia Olson",
+          "category": "Revista",
+          "created_at": "2018-12-12 05:21:20 ",
+          "update_at": "2016-09-12 10:06:04 "
+        },
+        {
+          "id": 12,
+          "name": "Fernandez Mack",
+          "category": "Tesis",
+          "created_at": "2017-10-29 09:32:04 ",
+          "update_at": "2018-02-21 08:47:00 "
+        },
+        {
+          "id": 13,
+          "name": "Gaines Heath",
+          "category": "Revista",
+          "created_at": "2015-01-18 08:38:32 ",
+          "update_at": "2015-09-17 04:54:12 "
+        },
+        {
+          "id": 14,
+          "name": "Vicki Coleman",
+          "category": "Libro",
+          "created_at": "2018-09-08 07:36:33 ",
+          "update_at": "2020-01-04 09:21:15 "
+        },
+        {
+          "id": 15,
+          "name": "Sherri Saunders",
+          "category": "Revista",
+          "created_at": "2015-01-24 04:10:39 ",
+          "update_at": "2014-08-13 09:16:35 "
+        },
+        {
+          "id": 16,
+          "name": "Fran Foreman",
+          "category": "Tesis",
+          "created_at": "2019-06-15 09:15:04 ",
+          "update_at": "2017-10-05 01:13:17 "
+        },
+        {
+          "id": 17,
+          "name": "Erma Campbell",
+          "category": "Libro",
+          "created_at": "2016-11-09 06:43:10 ",
+          "update_at": "2019-07-14 03:25:47 "
+        },
+        {
+          "id": 18,
+          "name": "Jerry Morrison",
+          "category": "Revista",
+          "created_at": "2017-03-18 09:21:18 ",
+          "update_at": "2019-05-20 04:55:26 "
+        },
+        {
+          "id": 19,
+          "name": "Camacho Hale",
+          "category": "Libro",
+          "created_at": "2017-07-28 10:29:33 ",
+          "update_at": "2016-12-31 08:02:58 "
+        },
+        {
+          "id": 20,
+          "name": "Briana Mcknight",
+          "category": "Libro",
+          "created_at": "2019-11-09 05:34:48 ",
+          "update_at": "2018-12-06 08:34:43 "
+        },
+        {
+          "id": 21,
+          "name": "Bradford Thompson",
+          "category": "Tesis",
+          "created_at": "2016-01-31 01:08:12 ",
+          "update_at": "2019-02-23 03:21:28 "
+        },
+        {
+          "id": 22,
+          "name": "Beck Harrison",
+          "category": "Libro",
+          "created_at": "2019-08-13 03:41:41 ",
+          "update_at": "2019-08-03 09:05:17 "
+        },
+        {
+          "id": 23,
+          "name": "Burgess Rosario",
+          "category": "Revista",
+          "created_at": "2018-07-20 08:26:11 ",
+          "update_at": "2019-01-04 11:58:11 "
+        },
+        {
+          "id": 24,
+          "name": "Walton Vaughan",
+          "category": "Revista",
+          "created_at": "2017-11-14 06:55:43 ",
+          "update_at": "2018-12-26 11:00:17 "
+        },
+        {
+          "id": 25,
+          "name": "Hebert Joyner",
+          "category": "Tesis",
+          "created_at": "2017-07-31 12:18:59 ",
+          "update_at": "2015-02-25 04:31:36 "
+        },
+        {
+          "id": 26,
+          "name": "Delgado Harmon",
+          "category": "Libro",
+          "created_at": "2015-12-06 05:18:54 ",
+          "update_at": "2014-09-09 02:27:10 "
+        },
+        {
+          "id": 27,
+          "name": "Clarke Langley",
+          "category": "Tesis",
+          "created_at": "2018-05-16 01:59:25 ",
+          "update_at": "2014-07-18 05:08:11 "
+        },
+        {
+          "id": 28,
+          "name": "Terri Lynch",
+          "category": "Tesis",
+          "created_at": "2016-12-29 07:20:18 ",
+          "update_at": "2019-10-12 01:59:45 "
+        },
+        {
+          "id": 29,
+          "name": "Katie Olsen",
+          "category": "Libro",
+          "created_at": "2017-05-29 08:21:02 ",
+          "update_at": "2019-11-06 05:34:51 "
+        },
+        {
+          "id": 30,
+          "name": "Leblanc Reilly",
+          "category": "Revista",
+          "created_at": "2018-07-29 11:25:42 ",
+          "update_at": "2014-04-14 03:10:10 "
+        },
+        {
+          "id": 31,
+          "name": "Chambers Spears",
+          "category": "Libro",
+          "created_at": "2016-01-15 02:19:41 ",
+          "update_at": "2018-10-05 03:30:36 "
+        },
+        {
+          "id": 32,
+          "name": "Nora Zamora",
+          "category": "Libro",
+          "created_at": "2016-05-19 07:53:06 ",
+          "update_at": "2014-05-10 12:33:14 "
+        },
+        {
+          "id": 33,
+          "name": "Wong Strong",
+          "category": "Tesis",
+          "created_at": "2019-03-06 09:29:14 ",
+          "update_at": "2018-08-01 08:45:02 "
+        },
+        {
+          "id": 34,
+          "name": "Katina Bartlett",
+          "category": "Tesis",
+          "created_at": "2014-11-19 09:03:54 ",
+          "update_at": "2017-07-09 01:26:57 "
+        },
+        {
+          "id": 35,
+          "name": "Imelda Love",
+          "category": "Tesis",
+          "created_at": "2015-07-11 02:56:41 ",
+          "update_at": "2014-09-05 01:14:45 "
+        },
+        {
+          "id": 36,
+          "name": "Fischer Nolan",
+          "category": "Libro",
+          "created_at": "2017-01-13 04:43:23 ",
+          "update_at": "2016-02-23 01:02:01 "
+        },
+        {
+          "id": 37,
+          "name": "Mcclain Ryan",
+          "category": "Libro",
+          "created_at": "2014-12-23 02:21:45 ",
+          "update_at": "2014-10-11 12:23:31 "
+        },
+        {
+          "id": 38,
+          "name": "Ann Brock",
+          "category": "Tesis",
+          "created_at": "2018-11-01 01:59:44 ",
+          "update_at": "2019-08-26 11:43:02 "
+        },
+        {
+          "id": 39,
+          "name": "Velma Brady",
+          "category": "Revista",
+          "created_at": "2017-11-25 07:28:31 ",
+          "update_at": "2018-06-30 10:25:51 "
+        }
+      
+    ],
+    "code": 200
+}

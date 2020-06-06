@@ -1,0 +1,12 @@
+{
+    "name": "resourceservice",
+    "version": "1.0.0",
+    "description": "Example of Resource Service documentation using OAS-3.0.2",
+    "private": false,
+    "dependencies": {
+        "redoc-cli": "^0.9.7"
+    },
+    "scripts": {
+        "start": "redoc-cli bundle -o index.html Service.yml"
+    }
+}
