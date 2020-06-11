@@ -9,7 +9,7 @@
           type: integer          
         name:
           type: string          
-        category: 
+        categories: 
           type: string  
         created_at: 
           type: string    
@@ -20,7 +20,7 @@
       example:
         id: 1
         name: Luis Joyanes 
-        category: Tesis  
+        categories: Tesis  
         created_at: "2020-04-13 06:10:41"
         updated_at: "2020-04-14 06:10:41" 
 
@@ -44,7 +44,7 @@
 
     #level no puede ser nullo        
     #type:Tesis, Revista, Libro   
-    #status:Habilitado, deshabilitado
+    #status:Habilitado, Deshabilitado
       example:
         id: 1
         title: Stand 3

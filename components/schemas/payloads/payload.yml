@@ -6,17 +6,17 @@
       properties:        
         name:
           type: string                               
-        category: 
+        categories: 
           type: string      
                          
       example:           
           name: Autor7
-          category: Tesis  
+          categories: Tesis  
          
 
     #level no puede ser nullo        
     #type:Tesis, Revista, Libro   
-    #status:Habilitado, deshabilitado     
+    #status:Habilitado, Deshabilitado     
     StandPayload:
       type: object
       properties:        

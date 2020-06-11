@@ -288,8 +288,8 @@ paths:
               $ref: components/schemas/payloads/payload.yml#/EditorialPayload
               
       responses:
-        '200':
-          $ref: components/responses/responses.yml#/Ok
+        '201':
+          $ref: components/responses/responses.yml#/CreatedEditorial
         '404':
           $ref: components/responses/responses.yml#/NotFound
         '422':
